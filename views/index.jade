@@ -1,0 +1,305 @@
+extends layout
+
+block content
+    .header
+      .header-left
+        a(href='index.html')
+          img(src='../img/logo.png', alt='')
+          span ARTS
+          |  SCHOOL
+      .header-right
+        span.menu
+          img(src='../img/menu.png', alt='')
+        nav#cl-effect-11.cl-effect-11
+          ul.nav1
+            li
+              a.scroll(href='#home', data-hover='HOME') HOME
+            li
+              a.scroll(href='#about', data-hover='ABOUT') ABOUT
+            li
+              a.scroll(href='#services', data-hover='SERVICES') SERVICES
+            li
+              a.scroll(href='#team', data-hover='TEAM') TEAM
+            li
+              a.scroll(href='#gallery', data-hover='GALLERY') GALLERY
+            li
+              a.scroll(href='#contact', data-hover='CONTACT') CONTACT
+        // script for menu
+        script.
+          $( "span.menu" ).click(function() {
+          $( "ul.nav1" ).slideToggle( 300, function() {
+          // Animation complete.
+          });
+          });
+        // //script for menu
+      .clearfix
+    #home.banner-slider
+      #top.callbacks_container
+        ul#slider3.rslides
+          li
+            .banner.one
+              .container
+                .banner-info
+                  h3
+                    | KNOWLEDGE 
+                    span |
+                    |  HARD WORK 
+                    span |
+                    |  INTELLIGENCE
+                  h4
+                    span ARTS
+                    |  SCHOOL
+                  p Make Your Life Beautiful
+          li
+            .banner.two
+              .container
+                .banner-info
+                  h3
+                    | KNOWLEDGE 
+                    span |
+                    |  HARD WORK 
+                    span |
+                    |  INTELLIGENCE
+                  h4
+                    span ARTS
+                    |  SCHOOL
+                  p Make Your Life Beautiful
+    .clearfix
+    // //banner-slider
+    // welcome
+    .welcome
+      .container
+        .welcome-head
+          h3 WELCOME
+          p
+            | Nam libero tempore, cum soluta nobis est eligendi optio
+            | cumque nihil impedit quo minus id quod maxime placeat facere
+            | possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+            | Temporibus autem quibusdam et aut officiis debitis aut rerum
+            | necessitatibus saepe eveniet ut et voluptates repudiandae sint
+            | et molestiae non recusandae.
+    // //welcome
+    // about
+    #about.about
+      .container
+        h3 ABOUT 
+        .about-grids
+          .col-md-6.about-grid-right
+            img.img-responsive(src='../img/1.jpg', alt=' ')
+          .col-md-6.about-grid-left
+            h4 eum fugiat quo voluptas nulla pariatur
+            p
+              | Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+              | voluptatibus maiores alias consequatur aut perferendis doloribus 
+              | asperiores repellat.
+              span
+                | Temporibus autem quibusdam et aut officiis debitis
+                | aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                | molestiae non recusandae.
+            .about-grid-left-grids
+              .about-grid-left-grid
+                img.img-responsive(src='../img/2.jpg', alt=' ')
+              .about-grid-left-grid
+                img.img-responsive(src='../img/3.jpg', alt=' ')
+              .about-grid-left-grid
+                img.img-responsive(src='../img/12.jpg', alt=' ')
+              .clearfix  
+          .clearfix  
+    // //about
+    // services
+    #services.services1
+      .container
+        h3 SERVICES
+        .servc-grids
+          .col-md-6.servc-grid
+            .servc-grid-left
+              span.glyphicon.glyphicon-education(aria-hidden='true')
+            .servc-grid-right
+              h4 cum soluta nobis est eligendi optio cumque nihil cons
+              p
+                | Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                | reiciendis voluptatibus maiores alias consequatur aut perferendis
+                | doloribus asperiores repellat.
+            .clearfix  
+          .col-md-6.servc-grid
+            .servc-grid-left
+              span.glyphicon.glyphicon-pencil(aria-hidden='true')
+            .servc-grid-right
+              h4 cum soluta nobis est eligendi optio cumque nihil cons
+              p
+                | Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                | reiciendis voluptatibus maiores alias consequatur aut perferendis
+                | doloribus asperiores repellat.
+            .clearfix  
+          .col-md-6.servc-grid
+            .servc-grid-left
+              span.glyphicon.glyphicon-home(aria-hidden='true')
+            .servc-grid-right
+              h4 cum soluta nobis est eligendi optio cumque nihil cons
+              p
+                | Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                | reiciendis voluptatibus maiores alias consequatur aut perferendis
+                | doloribus asperiores repellat.
+            .clearfix  
+          .col-md-6.servc-grid
+            .servc-grid-left
+              span.glyphicon.glyphicon-refresh(aria-hidden='true')
+            .servc-grid-right
+              h4 cum soluta nobis est eligendi optio cumque nihil cons
+              p
+                | Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                | reiciendis voluptatibus maiores alias consequatur aut perferendis
+                | doloribus asperiores repellat.
+            .clearfix  
+          .clearfix  
+    // services
+    // team
+    // start-teachers
+    #team.team
+      .container
+        h3.tittle OUR TEAM
+        .main
+          .col-md-3.view-grid
+            .view.fifth-effect
+              a(href='#', title='Full Image')
+                img(src='../img/t1.jpg', alt='')
+              .mask
+          .col-md-3.view-grid
+            .view.fifth-effect
+              a(href='#', title='Full Image')
+                img(src='../img/t2.jpg', alt='')
+              .mask
+          .col-md-3.view-grid
+            .view.fifth-effect
+              a(href='#', title='Full Image')
+                img(src='../img/t3.jpg', alt='')
+              .mask
+          .col-md-3.view-grid
+            .view.fifth-effect
+              a(href='#', title='Full Image')
+                img(src='../img/t4.jpg', alt='')
+              .mask
+          .clearfix
+    // //end-teachers
+    // //team
+    // gallery
+    #gallery.gallery
+      .container
+        h3.tittle GALLERY
+        .gallery-bottom
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g1.jpg', title='Image Title')
+                img.img-responsive(src='../img/g1.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g2.jpg', title='Image Title')
+                img.img-responsive(src='../img/g2.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g3.jpg', title='Image Title')
+                img.img-responsive(src='../img/g3.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g4.jpg', title='Image Title')
+                img.img-responsive(src='../img/g4.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g5.jpg', title='Image Title')
+                img.img-responsive(src='../img/g5.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g6.jpg', title='Image Title')
+                img.img-responsive(src='../img/g6.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g1.jpg', title='Image Title')
+                img.img-responsive(src='../img/g1.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g3.jpg', title='Image Title')
+                img.img-responsive(src='../img/g3.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .col-md-4.gal-grid
+            .view.view-fifth
+              a.b-link-stripe.b-animate-go.thickbox(href='../img/g2.jpg', title='Image Title')
+                img.img-responsive(src='../img/g2.jpg', alt='')
+                .mask
+                  h2 VOLUPTATIBUS
+                  p A wonderful serenity has taken possession of my entire soul.
+                  span More
+          .clearfix  
+        script(src='js/jquery.chocolat.js')
+        // light-box-files
+        script(type='text/javascript').
+          $(function() {
+          $('.gallery a').Chocolat();
+          });
+    // //gallery
+    // contact
+    #contact.contact
+      .container
+        h3.tittle.two CONTACT
+        .contact-top
+          .col-md-8.contact-top-right
+            form
+              input.text(type='text', value='Name', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Name';}")
+              input.text(type='text', value='Email Address', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Email Address';}")
+              .clearfix
+              textarea(onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Message';}") Message
+              .sub-button
+                input(type='submit', value='SEND')
+          .col-md-4.contact-top-left
+            .contact-top-one
+              h4 Address:
+              p
+                | Newyork Still Road.
+                span 756 gt globel Place,
+                |                                       CD-Road,M 07 435.
+            .contact-top-one
+              h4 Phone:
+              p
+                | Telephone: +1 234 567 9871
+                span FAX: +1 234 567 9871
+            .contact-top-one
+              h4 E-mail:
+              p
+                a(href='mailto:info@example.com') mail@example.com
+          .clearfix  
+    // //contact
+    .copy-right
+      .container
+        p
+          | © 2015 Arts School. All Rights Reserved | Design by  
+          a(href='http://w3layouts.com/')  W3layouts
